@@ -27,16 +27,8 @@ public class EditLead {
 		driver.findElement(By.id("updateLeadForm_description")).clear();
 		driver.findElement(By.id("updateLeadForm_importantNote")).sendKeys("Tester");
 		driver.findElement(By.name("submitButton")).click();
-		String predictTitle = "View Lead | opentaps CRM";
 		
-		String actualTitle = driver.getTitle();
-		if (predictTitle.equals(actualTitle)) {
-			System.out.println("Result page display");
-		} 
-		else 
-		{
-			System.out.println("Result page not display");
 		}
-		}
+		
 
 }
