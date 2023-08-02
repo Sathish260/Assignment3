@@ -28,15 +28,6 @@ public class DuplicateLead {
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("sathish");
 		driver.findElement(By.className("smallSubmit")).click();
         
-		String predictTitle = "View Lead | opentaps CRM";
-	
-		String actualTitle = driver.getTitle();
-		if (predictTitle.equals(actualTitle)) {
-			System.out.println("Result page display");
-		} 
-		else 
-		{
-			System.out.println("Result page not display");
 		}
 		}
 
